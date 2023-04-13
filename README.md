@@ -8,24 +8,27 @@ for the default one you can see the upcoming, current, and prev tournaments.
 for the student and admin main sceen you get all the actions available to you in buttons each one indicating some use case
 how should the system behave is clear in the use case description. 
 
+Read about what can the user and what can the admin do from our phase I submmision
+
 ## what each class do:
 
-Admin class:  clear
+*Admin* class:  clear no need for explaination
 
-Student class: store student data such as the teams he participated in
+*Student* class: store student data such as the teams he participated in
 
-Team class: can represent a participant of an individual or a team and a team is created for a single tournament
-Note: the variable points in elimination tournaments represent the round as mentioned in the comment of the code
+*Team* class: can represent a participant of an individual or a team and a team is created for a single tournament
 
-Tournament class: abstract class for tournaments. Have basic methods and variables
+Note: the variable points in the team class in elimination tournaments represent the round as mentioned in the comment of the code
 
-RoundRobin class: rounRobin tournaments functinalities
+*Tournament* class: abstract class for tournaments. Have basic methods and variables
 
-Elimination class: represent the elimination tournaments 
+*RoundRobin* class: rounRobin tournaments functinalities
 
-Match class: represent a match of two teams also clear
+*Elimination* class: represent the elimination tournaments 
 
-if u didnt get something you may check the implementaion of the class or check the class diagram for more understanding
+*Match* class: represent a match of two teams also clear
+
+If u didnt get something you may check the implementaion of the class or check the class diagram for more understanding
 
 ## Task List: 
 
@@ -58,8 +61,13 @@ if u didnt get something you may check the implementaion of the class or check t
 - [ ] set action for the system
 - [ ] IDK might add more tasks
 
-## Important Notes:
+## Important Notes when pushing your work:
 
-- dont forget to add comments
-- make you code clear and state clearly the variable names even if they were long (can be ignored for getters, setters,..)
+- pull the updated version before pushing your version (it might be old)
+- don't forget to add comments clearifying what youv'e done
+- make your code clear and state clearly the variable names even if they were long (can be ignored for getters, setters,..)
 - remember to check the implementaion is correct before you mark the task as done
+- it would be great if you can test it before pushing it
+- doing the tasks in order is great
+- tell us what task you are working on so no more than one person is woking on the same task
+
