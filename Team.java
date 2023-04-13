@@ -8,10 +8,45 @@ public class Team implements Comparable<Team>{
     private int goalsReceived;
     private int points;            // this varibale represent the current round if eliminatinon
     
-
+    // for individual tournaments
+    public Team(Tournament t,Student s){
+        this.tournament = t;
+        if (this.tournament.getIsIndividual()) this.name = s.getName();
+        // fail message
+    }
+    // another constructor (can be used for both tournaments)
     public Team(Tournament tournament,String name){
-        this.tournament = tournament;
         this.name = name;
+        this.tournament = tournament;
+    }
+
+    public int getGoalsReceived() {
+        return goalsReceived;
+    }
+    public int getGoalsScored() {
+        return goalsScored;
+    }
+    public int getPoints() {
+        return points;
+    }
+    public String getName() {
+        return name;
+    }
+    public Tournament getTournament() {
+        return tournament;
+    }
+
+
+
+
+
+
+    public void addStudent(Student stu){
+        if(stu.participateIn(tournament)){
+            // show message 
+            return;
+        }
+        members.add(stu);
     }
 
 
