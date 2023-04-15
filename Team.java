@@ -69,4 +69,9 @@ public class Team implements Comparable<Team>{
     public int compareTo(Team o) {
         return this.points - o.points;
     }
+
+    @Override
+    public String toString(){
+        return name;
+    }
 }
