@@ -42,7 +42,7 @@ public class Elimination extends Tournament{
 
         // get necessary information about the tree
         Date date;
-        int leafs = Math.ceilDiv(getNumberOfTeams(), 2);
+        int leafs = (getNumberOfTeams() +1 ) / 2; 
         int height = (int) Math.ceil(Math.log(leafs) / Math.log(2));
         
         //fill the tree, starting from the top, stop before the leafs
