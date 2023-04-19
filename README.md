@@ -38,7 +38,7 @@ If u didnt get something you may check the implementaion of the class or check t
 - [ ] add setters to variables that might need e.g. 'setTournamentRegistration(open = true)'
 - [ ] create checkers methods including equals methods (student.isparticipant(tournament), tournament.equals(),...)
 - [ ] create team comparetor i.e. complete compareTo() method
-- [ ] create generate matches for eleminiation
+- [x] create generate matches for eleminiation
 - [ ] create generate matches for roundRobin
 - [ ] create modifyScore and recordScore in Match class
 - [ ] create Main class that extends Application from javaFx
