@@ -10,14 +10,24 @@ abstract public class Tournament {
     private Date startDate;
     private Date endDate;
     private boolean hasFinished;
+    private Team winner;
 
     // constructor
+    public Tournament(String name, boolean isIndividual, String sport, Date startDate, Date endDate) {
+        this.name = name;
+        this.isIndividual = isIndividual;
+        this.sport = sport;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.teams = new ArrayList<Team>();
+        this.hasFinished = false;
+    }
+    // another constructor without endDate; atomaticlly set by the system
     public Tournament(String name, boolean isIndividual, String sport, Date startDate) {
         this.name = name;
         this.isIndividual = isIndividual;
         this.sport = sport;
         this.startDate = startDate;
-        //this.endDate = endDate;
         this.teams = new ArrayList<Team>();
         this.hasFinished = false;
     }
@@ -46,6 +56,20 @@ abstract public class Tournament {
     }
     public boolean getHasFinished() {
         return hasFinished;
+    }
+    public Team getWinner() {
+        return winner;
+    }
+
+    // Setters
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
+    }
+    public void setHasFinished(boolean hasFinished) {
+        this.hasFinished = hasFinished;
+    }
+    public void setWinner(Team winner) {
+        this.winner = winner;
     }
 
     // abstract methods
