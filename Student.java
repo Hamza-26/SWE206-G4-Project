@@ -16,7 +16,7 @@ public class Student{
     public String getName() {
         return name;
     }
-    
+
     // returns true if the student is enrolled in t
     public boolean participateIn(Tournament tournament){
         for(Team t : allTeams)
@@ -27,5 +27,8 @@ public class Student{
     public void addTeam(Team t){
         this.allTeams.add(t);
     }    
+    public void removeTeam(Team t){
+        this.allTeams.remove(t);
+    }
 
 }

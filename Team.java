@@ -20,6 +20,7 @@ public class Team implements Comparable<Team>{
         this.tournament = tournament;
     }
 
+    // getters
     public int getGoalsReceived() {
         return goalsReceived;
     }
@@ -49,8 +50,16 @@ public class Team implements Comparable<Team>{
         members.add(stu);
         stu.addTeam(this);
     }
+    public void deleteStudent(Student stu) throws Exception{
+        if (this.members.contains(stu)){
+            this.members.remove(stu);
+            stu.removeTeam(this);
+        }else throw new Exception("the student is not in the team");
+        
+    }
 
 
+    // team setters
     public void addGoalsReceived(int goalsReceived) {
         this.goalsReceived += goalsReceived;
     }
