@@ -9,12 +9,14 @@ public class Student{
         this.id = id;
     }
 
+    // getters
     public String getId() {
         return id;
     }
     public String getName() {
         return name;
     }
+    
     // returns true if the student is enrolled in t
     public boolean participateIn(Tournament tournament){
         for(Team t : allTeams)
