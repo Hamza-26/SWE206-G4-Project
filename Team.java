@@ -10,8 +10,8 @@ public class Team implements Comparable<Team>{
     
     // for individual tournaments
     public Team(Tournament t,Student s){
-        this.tournament = t;
-        if (this.tournament.getIsIndividual()) this.name = s.getName();
+        this(t,s.getName());
+        
         // fail message
     }
     // another constructor (can be used for both tournaments)
@@ -41,12 +41,13 @@ public class Team implements Comparable<Team>{
 
 
 
-    public void addStudent(Student stu){
+    public void addStudent(Student stu) throws Exception{
         if(stu.participateIn(tournament)){
-            // show message 
-            return;
+            throw new Exception("the student is already participated in the tournament "+tournament.toString());
+            
         }
         members.add(stu);
+        stu.addTeam(this);
     }
 
 

@@ -34,7 +34,7 @@ If u didnt get something you may check the implementaion of the class or check t
 
 - [x] create classes
 - [x] add attributes, getters
-- [ ] create adders methods (team.add(stu), tournament.add(team),...)
+- [x] create adders methods (team.add(stu), tournament.add(team),...)
 - [ ] add setters to variables that might need e.g. 'setTournamentRegistration(open = true)'
 - [ ] create checkers methods including equals methods (student.isparticipant(tournament), tournament.equals(),...)
 - [ ] create team comparetor i.e. complete compareTo() method

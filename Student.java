@@ -22,4 +22,8 @@ public class Student{
         return false;
     }
 
+    public void addTeam(Team t){
+        this.allTeams.add(t);
+    }    
+
 }
