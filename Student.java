@@ -31,4 +31,8 @@ public class Student{
         this.allTeams.remove(t);
     }
 
+    @Override
+    public String toString() {
+        return name + " ," + id;
+    }
 }
